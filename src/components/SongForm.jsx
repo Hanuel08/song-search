@@ -103,12 +103,12 @@ export function SongForm({ handleSearch }) {
           </div>
         </div>
         <div className="mt-4 flex flex-wrap items-center gap-3">
-          <button
+          <input
             type="submit"
             className="rounded-lg bg-gradient-to-br from-emerald-500 to-emerald-700 px-5 py-2.5 text-sm font-bold tracking-wide text-white shadow-md shadow-emerald-600/30 transition hover:brightness-110 active:translate-y-px focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-violet-500 dark:from-emerald-400 dark:to-emerald-600 dark:text-zinc-950 dark:shadow-emerald-400/25"
-          >
-            Buscar
-          </button>
+            value="Buscar"
+          />
+          
         </div>
       </form>
     </div>
