@@ -10,16 +10,16 @@ export const validateFormField = (data) => {
     },
     messages: {
       artist: {
-        required: "Artist is required",
-        string: "Artist must be a text string",
-        min: "Artist must be at least 3 characters long",
-        max: "Artist must be at most 60 characters long"
+        required: "El artista es obligatorio",
+        string: "El artista debe ser texto (sin números)",
+        min: "El artista debe tener al menos 3 caracteres",
+        max: "El artista no puede superar 60 caracteres"
       },
       song: {
-        required: "Song is required",
-        text: "Song must be a valid text",
-        min: "Song must be at least 3 characters long",
-        max: "Song must be at most 60 characters long"
+        required: "La canción es obligatoria",
+        text: "La canción debe ser un texto válido",
+        min: "La canción debe tener al menos 3 caracteres",
+        max: "La canción no puede superar 60 caracteres"
       }
     }
   })
