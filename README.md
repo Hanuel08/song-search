@@ -1,16 +1,45 @@
-# React + Vite
+# Song Search
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Mini práctica en **React** para buscar letras de canciones y ver una ficha breve del artista. No es un producto en producción: sirve para practicar estado, efectos, formularios y estilos.
 
-Currently, two official plugins are available:
+## Vista general
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Interfaz en modo claro, con el formulario y la imagen decorativa en la página de inicio.
 
-## React Compiler
+![Pantalla principal en modo claro](public/img/song-search-white.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Mismo flujo en **modo oscuro** (tema conmutado desde la cabecera).
 
-## Expanding the ESLint configuration
+![Pantalla en modo oscuro](public/img/song-search-dark.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Tras enviar la búsqueda se muestran la letra y los datos del intérprete (cuando las APIs responden con datos válidos).
+
+![Resultado de una búsqueda](public/img/song-search-search.png)
+
+En inicio, antes de buscar, aparece un gato centrado como detalle visual; al buscar desaparece hasta que vuelvas con «Volver al inicio».
+
+![Gato decorativo en la página de inicio](public/img/cute-cat.png)
+
+## Stack
+
+- [React](https://react.dev/) 19  
+- [Vite](https://vite.dev/) 8  
+- [Tailwind CSS](https://tailwindcss.com/) 4  
+
+## APIs (solo lectura)
+
+- Letras: [lyrics.ovh](https://api.lyrics.ovh)  
+- Artista / biografía: [TheAudioDB](https://www.theaudiodb.com/)  
+
+## Cómo ejecutarlo
+
+```bash
+npm install
+npm run dev
+```
+
+Otros scripts: `npm run build`, `npm run preview`, `npm run lint`.
+
+## Licencia
+
+Proyecto de práctica personal; revisa las condiciones de uso de las APIs enlazadas arriba si reutilizas el código.
