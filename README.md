@@ -16,9 +16,6 @@ Tras enviar la búsqueda se muestran la letra y los datos del intérprete (cuand
 
 ![Resultado de una búsqueda](public/img/song-search-search.png)
 
-En inicio, antes de buscar, aparece un gato centrado como detalle visual; al buscar desaparece hasta que vuelvas con «Volver al inicio».
-
-![Gato decorativo en la página de inicio](public/img/cute-cat.png)
 
 ## Stack
 
